@@ -22,7 +22,7 @@
   }
 
 a, #me,.heading, .modal-title {
-    font-family: "Arial Black", sans-serif;
+    font-family: "Arial Black", Gadget, sans-serif;
 }
 .center {
     text-align: center;
@@ -30,8 +30,7 @@ a, #me,.heading, .modal-title {
 .heading {
     font-size:300%;
 }
-p, li{
-    font-family: "Comic Sans MS", sans-serif;
+
 
 }
 #about {
