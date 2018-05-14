@@ -30,7 +30,8 @@ a, #me,.heading, .modal-title {
 .heading {
     font-size:300%;
 }
-
+p, li{
+    font-family: "Comic Sans MS", cursive, sans-serif;
 
 }
 #about {
