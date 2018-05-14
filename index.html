@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Fernando Corona</title>
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="images/favicon.ico">
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/styles.css" type="text/css" rel="stylesheet" />
+  <link href="css/styles2.css" type="text/css" rel="stylesheet" />
+<!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!--Script-->
+<script src="functionality.js"></script>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+      <a class="navbar-brand" href="#section1"><h4>Home</h4></a>
+    </div>
+    <div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="#section2"><h4>Portfolio</h4></a></li>
+          <li><a href="#section3"><h4>About</h4></a></li>
+          <li><a href="#section4"><h4>Contact</h4></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>    
+
+<div id="section1" class="container-fluid">
+  <img id="me" class="center" src="images/me.png" alt="me">
+  <h1 id="me" class="center">Fernando Javier Corona</h1>
+  <hr class="center" width="30%" style="border-top: dotted 10px;">
+  <h3 class="center">University of Arizona Information Science Graduate</h3>
+  <h3 class="center">Web Developer</h3>
+  <br>
+  <div class="center">
+    <img class="licon" src="images/icons/github.png" alt="Github Icon">
+    <img class="icon" src="images/icons/linkedin.png" alt="LinkedIn Icon">
+    <img class="icon" src="images/icons/resume.png" alt="Email Icon">
+  </div>
+</div>
+<div id="section2" class="container-fluid">
+  <h1 class="center heading">Portfolio</h1>
+  <hr class="center" width="20%" style="border-top: dotted 10px;">
+  <div class="row">
+    <!-- Project 1 -->
+    <div id="column1" class="column">
+      <div class="project-container">
+        <img src="images/tmnt400x300.png" alt="place holder" class="image">
+        <!-- Trigger the modal with a button -->
+        <a  data-toggle="modal" data-target="#myModal1" data-backdrop="static" data-keyboard="false">
+        <div class="overlay">
+          <div class="text"><img src="images/icons/zoom.png" alt="" class="image"></div>
+        </div>
+      </a>
+      </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal1" role="dialog">
+        <div class="modal-dialog">
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Modal Header 1</h4>
+            </div>
+            <div class="modal-body">
+              <div class="videoWrapper">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/QESzneA2dLI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+              </div>
+              <br>
+              <strong><p>Technologies</p></strong>
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+              </ul> 
+              <strong><p>Description</p></strong>
+              <p>
+                  orem Ipsum is simply dummy text of the printing and typesetting industry.
+                   Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                    when an unknown printer took a galley of type and scrambled it to make a type 
+                    specimen book. It has survived not only five centuries, but also the leap into electronic 
+                    typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release 
+                    of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing s
+                    oftware like Aldus PageMaker including versions of Lorem Ip
+              </p> 
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+            <script>
+            // Finds all iframes from youtubes and gives them a unique class
+            jQuery('iframe[src*="https://www.youtube.com/embed/"]').addClass("youtube-iframe");
+            jQuery(".btn").click(function() {
+            // changes the iframe src to prevent playback or stop the video playback in our case
+            $('.youtube-iframe').each(function(index) {
+            $(this).attr('src', $(this).attr('src'));
+            return false;
+            });  
+            //click function 
+          });
+          jQuery(".close").click(function() {
+            // changes the iframe src to prevent playback or stop the video playback in our case
+            $('.youtube-iframe').each(function(index) {
+            $(this).attr('src', $(this).attr('src'));
+            return false;
+            });  
+            //click function 
+          });
+          </script>
+          </div>
+        </div>
+      </div>
+    <!-- Project 2 -->
+    <div class="column">
+      <div class="project-container">
+        <img src="images/tmnt400x300.png" alt="place holder" class="image">
+        <!-- Trigger the modal with a button -->
+        <a  data-toggle="modal" data-target="#myModal2" data-backdrop="static" data-keyboard="false">
+        <div class="overlay">
+          <div class="text"><img src="images/icons/zoom.png" alt="" class="image"></div>
+        </div>
+        </a>
+      </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal2" role="dialog">
+        <div class="modal-dialog">
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Modal Header 2</h4>
+            </div>
+            <div class="modal-body">
+              <p>
+              Modal number 2 
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+            <script>
+              // Finds all iframes from youtubes and gives them a unique class
+              jQuery('iframe[src*="https://www.youtube.com/embed/"]').addClass("youtube-iframe");
+              jQuery(".btn").click(function() {
+              // changes the iframe src to prevent playback or stop the video playback in our case
+              $('.youtube-iframe').each(function(index) {
+              $(this).attr('src', $(this).attr('src'));
+              return false;
+              });  
+              //click function 
+            });
+            jQuery(".close").click(function() {
+              // changes the iframe src to prevent playback or stop the video playback in our case
+              $('.youtube-iframe').each(function(index) {
+              $(this).attr('src', $(this).attr('src'));
+              return false;
+              });  
+              //click function 
+            });
+            </script>
+          </div>
+        </div>
+      </div>
+    <!-- Project 3 -->
+    <div class="column">
+      <div class="project-container">
+        <img src="images/tmnt400x300.png" alt="place holder" class="image">
+        <!-- Trigger the modal with a button -->
+        <a  data-toggle="modal" data-target="#myModal3" data-backdrop="static" data-keyboard="false">
+        <div class="overlay">
+          <div class="text"><img src="images/icons/zoom.png" alt="" class="image"></div>
+        </div>
+        </a>
+      </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal3" role="dialog">
+        <div class="modal-dialog">
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Modal Header 3</h4>
+            </div>
+            <div class="modal-body">
+              <p>
+              Modal number 3 
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+            <script>
+              // Finds all iframes from youtubes and gives them a unique class
+              jQuery('iframe[src*="https://www.youtube.com/embed/"]').addClass("youtube-iframe");
+              jQuery(".btn").click(function() {
+              // changes the iframe src to prevent playback or stop the video playback in our case
+              $('.youtube-iframe').each(function(index) {
+              $(this).attr('src', $(this).attr('src'));
+              return false;
+              });  
+              //click function 
+            });
+            jQuery(".close").click(function() {
+              // changes the iframe src to prevent playback or stop the video playback in our case
+              $('.youtube-iframe').each(function(index) {
+              $(this).attr('src', $(this).attr('src'));
+              return false;
+              });  
+              //click function 
+            });
+            </script>
+          </div>
+        </div>
+      </div>
+  
+    <!-- Project 4 -->
+    <div id="column4" class="column">
+      <div class="project-container">
+        <img src="images/tmnt400x300.png" alt="place holder" class="image">
+        <!-- Trigger the modal with a button -->
+        <a  data-toggle="modal" data-target="#myModal4" data-backdrop="static" data-keyboard="false">
+        <div class="overlay">
+          <div class="text"><img src="images/icons/zoom.png" alt="" class="image"></div>
+        </div>
+        </a>
+      </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal4" role="dialog">
+        <div class="modal-dialog">
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Modal Header 4</h4>
+            </div>
+            <div class="modal-body">
+              <p>
+              Modal number 4 
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+            <script>
+              // Finds all iframes from youtubes and gives them a unique class
+              jQuery('iframe[src*="https://www.youtube.com/embed/"]').addClass("youtube-iframe");
+              jQuery(".btn").click(function() {
+              // changes the iframe src to prevent playback or stop the video playback in our case
+              $('.youtube-iframe').each(function(index) {
+              $(this).attr('src', $(this).attr('src'));
+              return false;
+              });  
+              //click function 
+            });
+            jQuery(".close").click(function() {
+              // changes the iframe src to prevent playback or stop the video playback in our case
+              $('.youtube-iframe').each(function(index) {
+              $(this).attr('src', $(this).attr('src'));
+              return false;
+              });  
+              //click function 
+            });
+            </script>
+          </div>
+        </div>
+      </div>
+    <!-- Project 5 -->
+    <div class="column">
+      <div class="project-container">
+        <img src="images/tmnt400x300.png" alt="place holder" class="image">
+        <!-- Trigger the modal with a button -->
+        <a  data-toggle="modal" data-target="#myModal5" data-backdrop="static" data-keyboard="false">
+        <div class="overlay">
+          <div class="text"><img src="images/icons/zoom.png" alt="" class="image"></div>
+        </div>
+        </a>
+      </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal5" role="dialog">
+        <div class="modal-dialog">
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Modal Header 5</h4>
+            </div>
+            <div class="modal-body">
+              <p>
+              Modal number 5
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+            <script>
+              // Finds all iframes from youtubes and gives them a unique class
+              jQuery('iframe[src*="https://www.youtube.com/embed/"]').addClass("youtube-iframe");
+              jQuery(".btn").click(function() {
+              // changes the iframe src to prevent playback or stop the video playback in our case
+              $('.youtube-iframe').each(function(index) {
+              $(this).attr('src', $(this).attr('src'));
+              return false;
+              });  
+              //click function 
+            });
+            jQuery(".close").click(function() {
+              // changes the iframe src to prevent playback or stop the video playback in our case
+              $('.youtube-iframe').each(function(index) {
+              $(this).attr('src', $(this).attr('src'));
+              return false;
+              });  
+              //click function 
+            });
+            </script>
+          </div>
+        </div>
+      </div>
+    <!-- Project 6 -->
+    <div class="column">
+      <div class="project-container">
+        <img src="images/tmnt400x300.png" alt="place holder" class="image">
+        <!-- Trigger the modal with a button -->
+        <a  data-toggle="modal" data-target="#myModal6" data-backdrop="static" data-keyboard="false">
+        <div class="overlay">
+          <div class="text"><img src="images/icons/zoom.png" alt="" class="image"></div>
+        </div>
+        </a>
+      </div>
+    </div>
+  </div>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal6" role="dialog">
+        <div class="modal-dialog">
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Modal Header 6</h4>
+            </div>
+            <div class="modal-body">
+              <p>
+              Modal number 6 
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+            <script>
+              // Finds all iframes from youtubes and gives them a unique class
+              jQuery('iframe[src*="https://www.youtube.com/embed/"]').addClass("youtube-iframe");
+              jQuery(".btn").click(function() {
+              // changes the iframe src to prevent playback or stop the video playback in our case
+              $('.youtube-iframe').each(function(index) {
+              $(this).attr('src', $(this).attr('src'));
+              return false;
+              });  
+              //click function 
+            });
+            jQuery(".close").click(function() {
+              // changes the iframe src to prevent playback or stop the video playback in our case
+              $('.youtube-iframe').each(function(index) {
+              $(this).attr('src', $(this).attr('src'));
+              return false;
+              });  
+              //click function 
+            });
+            </script>
+          </div>
+        </div>
+      </div>
+  
+</div>
+<div id="section3" class="container-fluid">
+  <h1 class="center heading">About</h1>
+  <hr class="center" width="20%" style="border-top: dotted 10px;">
+  <p id="about" class="center">I am full stack web developer skilled in HTML5, CSS, JavaScript, PHP and SQL.
+                    In addition to this I also have a strong background programming in Python 
+                    and using advance libaries like pandas and beatifullsoup. I am full stack web developer skilled in HTML5,
+                    
+</div>
+<div id="section4" class="container-fluid">
+  <h1 class="center heading">Contact</h1>
+  <hr class="center" width="20%" style="border-top: dotted 10px;">
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+</div>
+
+<footer class="container-fluid text-center">
+  <p>Footer Text</p>
+</footer>
+</body>
+</html>

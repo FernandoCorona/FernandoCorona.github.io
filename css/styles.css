@@ -1,0 +1,119 @@
+.navbar-brand,
+.navbar-nav li a {
+    line-height: 60px;
+    height: 60px;
+    padding-top: 0;
+}
+
+#me {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.icon {
+    margin-left: 3%;
+}
+.icon:hover {
+    transform: scale(1.2);
+  }
+.licon:hover {
+    transform: scale(1.2);
+  }
+
+a, #me,.heading, .modal-title {
+    font-family: "Arial Black", Gadget, sans-serif;
+}
+.center {
+    text-align: center;
+}
+.heading {
+    font-size:300%;
+}
+p, li{
+    font-family: "Comic Sans MS", cursive, sans-serif;
+
+}
+#about {
+    font-size:130%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+body {
+    position: relative; 
+}
+footer {
+    padding-top:50px;
+    height:100px;
+    color: white; 
+    background-color:#0197ba;
+}
+#section1 {
+    padding-top:100px;
+    height:800px;
+    color: #fff; 
+    background-color: #0197ba;
+}
+/*This below make section two responsive*/
+#section2 {
+    padding-top:100px;
+    height:900px;
+    color: #fff; 
+    background-color: #00688B;
+}
+#column1, #column4{
+    margin-left: 5%;
+}
+@media screen and (max-width: 1200px) {
+    #section2 {
+        padding-top:100px;
+        height:800px;
+        color: #fff; 
+        background-color: #00688B;
+    }
+}
+
+@media screen and (max-width: 815px) {
+    #section2 {
+        padding-top:100px;
+        height:1075px;
+        color: #fff; 
+        background-color: #00688B;
+    }
+    #column1, #column4{/*removes the margin gent it change to two column based on size*/
+        margin-left: 0%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #section2 {
+        padding-top:100px;
+        height:2800px;
+        color: #fff; 
+        background-color: #00688B;
+    }
+}
+@media screen and (max-width: 400px) {
+    #section2 {
+        padding-top:100px;
+        height:1925px;
+        color: #fff; 
+        background-color: #00688B;
+    }
+}
+
+#section3 {
+    padding-top:100px;
+    height:500px;color: #fff; 
+    background-color: #0197ba;
+}
+#section4 {
+    padding-top:100px;
+    height:1000px;
+    color: #fff; 
+    background-color: #00688B;
+}
+
+
+
