@@ -32,13 +32,9 @@ a, #me,.heading, .modal-title {
 }
 p, li{
     font-family: "Comic Sans MS";
+}
 
-}
-#about {
-    font-size:130%;
-    margin-left: 5%;
-    margin-right: 5%;
-}
+
 
 body {
     position: relative; 
@@ -49,35 +45,27 @@ footer {
     color: white; 
     background-color:#0197ba;
 }
-#section1 {
+#home {
     padding-top:100px;
-    height:800px;
+    padding-bottom:100px;
     color: #fff; 
     background-color: #0197ba;
 }
 /*This below make section two responsive*/
-#section2 {
+#portfolio {
     padding-top:100px;
-    height:900px;
+    padding-bottom:100px;
     color: #fff; 
     background-color: #00688B;
 }
 #column1, #column4{
     margin-left: 5%;
 }
-@media screen and (max-width: 1200px) {
-    #section2 {
-        padding-top:100px;
-        height:800px;
-        color: #fff; 
-        background-color: #00688B;
-    }
-}
 
 @media screen and (max-width: 815px) {
-    #section2 {
+    #portfolio {
         padding-top:100px;
-        height:1075px;
+        padding-bottom:100px;
         color: #fff; 
         background-color: #00688B;
     }
@@ -86,29 +74,14 @@ footer {
     }
 }
 
-@media screen and (max-width: 600px) {
-    #section2 {
-        padding-top:100px;
-        height:2800px;
-        color: #fff; 
-        background-color: #00688B;
-    }
-}
-@media screen and (max-width: 400px) {
-    #section2 {
-        padding-top:100px;
-        height:1925px;
-        color: #fff; 
-        background-color: #00688B;
-    }
-}
 
-#section3 {
+#about {
     padding-top:100px;
-    height:500px;color: #fff; 
+    padding-bottom:100px;
+    color: #fff; 
     background-color: #0197ba;
 }
-#section4 {
+#contact {
     padding-top:100px;
     height:1000px;
     color: #fff; 
