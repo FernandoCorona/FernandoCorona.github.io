@@ -30,7 +30,7 @@ a, #me,.heading, .modal-title {
 .heading {
     font-size:300%;
 }
-p, li, label, input {
+p, li, label, input, #aboutme {
     font-family: "Comic Sans MS";
 }
 #aboutme {
@@ -46,6 +46,26 @@ p, li, label, input {
     font-size:130%;
     margin-right: 15%;
     margin-left: 15%
+}
+@media screen and (max-width: 600px) {
+    #aboutme {
+        -webkit-column-count: 1; /* Chrome, Safari, Opera */
+        -moz-column-count: 1; /* Firefox */
+        column-count: 1;
+        -webkit-column-gap: 40px; /* Chrome, Safari, Opera */
+        -moz-column-gap: 40px; /* Firefox */
+        column-gap: 40px;
+        -webkit-column-rule-style: solid; /* Chrome, Safari, Opera */
+        -moz-column-rule-style: solid; /* Firefox */
+        column-rule-style: none;
+        font-size:130%;
+        margin-right: 15%;
+        margin-left: 15%
+    }
+    p {
+        text-align: center;
+    }
+    
 }
 
 
